@@ -1,0 +1,11 @@
+/*
+ * SquadForce Icon Pack
+ */
+.squadforce-icon {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    line-height: 1em;
+    vertical-align: -.125em;
+    fill: currentColor;
+}
