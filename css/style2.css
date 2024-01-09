@@ -1,0 +1,23 @@
+/**
+ * SquadForce List Styles 2
+ */
+.vp-portfolio__items-style-squadforce-list-2 .vp-portfolio__item-wrap:first-child .nk-stretch-first-post .nk-post-img img {
+  height: 175px;
+}
+.vp-portfolio__items-style-squadforce-list-2 .nk-post-img img {
+  -webkit-transition: opacity 0.15s ease-in-out, -webkit-transform 0.15s ease-in-out;
+  transition: opacity 0.15s ease-in-out, -webkit-transform 0.15s ease-in-out;
+  -o-transition: transform 0.15s ease-in-out, opacity 0.15s ease-in-out;
+  transition: transform 0.15s ease-in-out, opacity 0.15s ease-in-out;
+  transition: transform 0.15s ease-in-out, opacity 0.15s ease-in-out, -webkit-transform 0.15s ease-in-out;
+  -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+          transform: scale(1);
+  will-change: transform, opacity;
+  z-index: 1;
+}
+.vp-portfolio__items-style-squadforce-list-2 .vp-portfolio__item:hover .nk-post-img img {
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1);
+}
