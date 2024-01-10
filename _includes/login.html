@@ -1,0 +1,87 @@
+<!-- START: Login Modal -->
+<div class="nk-modal modal fade nk-sign-form" id="modalLogin" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-sm" role="document">
+    <div class="modal-content">
+    <div class="modal-body">
+    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+    <span class="ion-android-close"></span>
+    </button>
+    <div class="nk-sign-form-container lwa lwa-default">
+    <!-- START: Login Form -->
+    <form class="nk-sign-form-login active lwa-form nk-form text-white" action="https://wp.nkdev.info/squadforce/wp-login.php" method="post">
+    <div>
+    <h4 class="mb-0"><span class="text-main-1">Sign</span>&nbsp;In</h4>
+    <div class="nk-gap-1"></div>
+    <span class="lwa-status"></span>
+    
+    <span class="lwa-username">
+    <span class="lwa-username-input">
+    <input class="form-control" type="text" placeholder="Username or Email" name="log">
+    </span>
+    </span>
+    
+    <div class="nk-gap"></div>
+    
+    <span class="lwa-password">
+    <span class="lwa-password-input">
+    <input class="form-control" type="password" placeholder="Password" name="pwd">
+    </span>
+    </span>
+    
+    <div class="nk-gap"></div>
+    <div class="row vertical-gap">
+    <div class="lwa-submit col-md-6">
+    <div class="form-row align-items-center">
+    <div class="col-auto">
+    <div class="custom-control custom-checkbox float-left mr-sm-2">
+    <input type="checkbox" class="custom-control-input lwa-rememberme" name="rememberme" value="forever" id="remembermeLwa">
+    <label class="custom-control-label" for="remembermeLwa">Remember Me</label>
+    </div>
+    </div>
+    <div class="col lwa-submit-button">
+    <button class="nk-btn nk-btn-rounded nk-btn-color-white nk-btn-block" name="wp-submit" id="lwa_wp-submit" value="Sign In">Sign In</button>
+    <input type="hidden" name="lwa_profile_link" value="" />
+    <input type="hidden" name="login-with-ajax" value="login" />
+    </div>
+    </div>
+    </div>
+    <div class="col-md-6">
+    <div>
+    <a class="nk-sign-form-lost-toggle" href="#">Forgot your password?</a>
+    </div>
+    </div>
+    </div>
+    
+    <div class="clearfix"></div>
+    
+    </div>
+    </form>
+    <!-- END: Login Form -->
+    <!-- START: Lost Password Form -->
+    <form class="nk-sign-form-lost lwa-remember" action="https://wp.nkdev.info/squadforce/wp-login.php?action=lostpassword" method="post">
+    <div>
+    <h4 class="mb-0"><span class="text-main-1">Lost</span>&nbsp;Password</h4>
+    <div class="nk-gap-1"></div>
+    <span class="lwa-status"></span>
+    
+    <span class="lwa-remember-email">
+    <input type="text" name="user_login" class="form-control lwa-user-remember" value="Enter username or email" onfocus="if(this.value == 'Enter username or email'){this.value = '';}" onblur="if(this.value == ''){this.value = 'Enter username or email'}" />
+    </span>
+    
+    <div class="nk-gap"></div>
+    
+    <span class="lwa-remember-buttons">
+    <button class="nk-btn nk-btn-rounded nk-btn-color-white text-dark-1 float-right lwa-button-remember">Get New Password</button>
+    <input type="hidden" name="login-with-ajax" value="remember" />
+    </span>
+    <a class="nk-sign-form-login-toggle float-left" href="#">Back to Log In</a>
+    <div class="clearfix"></div>
+    </div>
+    </form>
+    <!-- END: Lost Password Form -->
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <!-- END: Login Modal -->
