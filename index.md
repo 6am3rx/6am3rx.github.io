@@ -108,12 +108,12 @@ display: none;
 <style id='ghostkit-typography-inline-css'>
 body, .nk-sub-title, .nk-counter-3 .nk-counter-title{font-family: Open Sans, sans-serif;font-style: normal;font-weight: 400;line-height: 1.7;}.nk-accordion .panel-heading a, .nk-btn, .nk-match-score, .nk-tabs .nav-tabs .nav-link, .button, .ghostkit-button, .vp-filter .vp-filter__item, .vp-sort .vp-sort__item, .vp-pagination .vp-pagination__item, .ghostkit-tabs .ghostkit-tabs-buttons-item, .ghostkit-accordion .ghostkit-accordion-item-heading, .wp-block-button__link, .woocommerce .button, .add_to_cart_button, .added_to_cart{font-family: Montserrat, sans-serif;font-style: normal;font-weight: 700;}h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, h1.entry-title, .display-1, .display-2, .display-3, .display-4, .nk-navbar, .nk-match .nk-match-team-name, .nk-counter .nk-count, .nk-counter-2 .nk-count, .nk-counter-3 .nk-count, .nk-breadcrumbs, .nk-countdown .nk-hexagon > span, .nk-forum-topic > li .nk-forum-topic-author-name, .ghostkit-icon-box .ghostkit-counter-box-number-wrap, .ghostkit-counter-box .ghostkit-counter-box-number-wrap, .ghostkit-countdown .ghostkit-countdown-unit-number{font-family: Montserrat, sans-serif;font-style: normal;font-weight: 700;}h1, .h1, h1.entry-title{font-size: 42px;}h2, .h2{font-size: 32.9px;}h3, .h3{font-size: 24.5px;}h4, .h4{font-size: 18.48px;}h5, .h5{font-size: 14.28px;}h6, .h6{font-size: 12.32px;}html{font-size: 14px;}.display-1{font-size: 65.8px;}.display-2{font-size: 58.8px;}.display-3{font-size: 51.8px;}.display-4{font-size: 44.8px;}
 </style>
-<script src='https://wp.nkdev.info/squadforce/wp-includes/js/jquery/jquery.min.js?ver=3.6.1' id='jquery-core-js'></script>
-<script src='https://wp.nkdev.info/squadforce/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.3.2' id='jquery-migrate-js'></script>
+<script src='/js/jquery.min.js?ver=3.6.1' id='jquery-core-js'></script>
+<script src='/js/jquery-migrate.min.js?ver=3.3.2' id='jquery-migrate-js'></script>
 <script id='login-with-ajax-js-extra'>
 var LWA = {"ajaxurl":"https:\/\/wp.nkdev.info\/squadforce\/wp-admin\/admin-ajax.php"};
 </script>
-<script src='https://wp.nkdev.info/squadforce/wp-content/plugins/login-with-ajax/widget/login-with-ajax.js?ver=3.1.11' id='login-with-ajax-js'></script>
+<script src='/js/login-with-ajax.js?ver=3.1.11' id='login-with-ajax-js'></script>
 
 <!-- Google Analytics snippet added by Site Kit -->
 <script src='https://www.googletagmanager.com/gtag/js?id=UA-48958097-3' id='google_gtagjs-js' async></script>
@@ -126,7 +126,7 @@ gtag("config", "UA-48958097-3", {"anonymize_ip":true});
 </script>
 
 <!-- End Google Analytics snippet added by Site Kit -->
-<script src='https://wp.nkdev.info/squadforce/wp-content/themes/squadforce-child/script.js?ver=6.1.4' id='squadforce-child-js'></script>
+<script src='/js/script.js?ver=6.1.4' id='squadforce-child-js'></script>
 <link rel="https://api.w.org/" href="https://wp.nkdev.info/squadforce/wp-json/" /><link rel="alternate" type="application/json" href="https://wp.nkdev.info/squadforce/wp-json/wp/v2/pages/12" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://wp.nkdev.info/squadforce/xmlrpc.php?rsd" />
 <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://wp.nkdev.info/squadforce/wp-includes/wlwmanifest.xml" />
 <meta name="generator" content="WordPress 6.1.4" />
