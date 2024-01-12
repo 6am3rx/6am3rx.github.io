@@ -8,13 +8,16 @@
   rating: 3.50
   price: 26.00
   image: product-61-1-300x384.jpg
+  link: ?add-to-cart=403
 
 - name: A HUNDRED THOUSAND
   rating: 3.50
   price: 26.00
   image: product-51-300x384.jpg
+  link: ?add-to-cart=403
 
 - name: A HUNDRED THOUSAND
   rating: 3.50
   price: 26.00
   image: product-41-300x384.jpg
+  link: ?add-to-cart=403
