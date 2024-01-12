@@ -60,14 +60,14 @@
 {% for game in site.data.games %}
 <li class="wc-block-grid__product">
 <div class="nk-product-cat-2">
-<a href="https://wp.nkdev.info/squadforce/product/she-was-bouncing/" class="wc-block-grid__product-link nk-product-image"><div class="wc-block-grid__product-image"><noscript><img width="300" height="384" data-skip-lazy src="/images/{{ game.image }}" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="" decoding="async" loading="lazy" /></noscript><img width="300" height="384" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjM4NCIgdmlld0JveD0iMCAwIDMwMCAzODQiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PC9zdmc+" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail vp-lazyload" alt decoding="async" loading="eager" data-src="/images/{{ game.image }}" data-sizes="auto"></div></a>
+<a href="{{ game.link1 }}" class="wc-block-grid__product-link nk-product-image"><div class="wc-block-grid__product-image"><noscript><img width="300" height="384" data-skip-lazy src="/images/{{ game.image }}" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="" decoding="async" loading="lazy" /></noscript><img width="300" height="384" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjM4NCIgdmlld0JveD0iMCAwIDMwMCAzODQiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PC9zdmc+" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail vp-lazyload" alt decoding="async" loading="eager" data-src="/images/{{ game.image }}" data-sizes="auto"></div></a>
 <div class="nk-product-cont">
 <h3 class="woocommerce-loop-product__title nk-product-title h5 wc-block-grid__product-title">
-<a href="https://wp.nkdev.info/squadforce/product/she-was-bouncing/">{{ game.name }}</a>
+<a href="{{ game.link1 }}">{{ game.name }}</a>
 </h3>
 <div class="wc-block-grid__product-rating"><div class="star-rating" role="img" aria-label="Rated 5.00 out of 5"><span style="width:100%">Rated <strong class="rating">5.00</strong> out of 5 based on <span class="rating">2</span> customer ratings</span></div></div>
 <div class="wc-block-grid__product-price price"><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">&#36;</span>20.00</bdi></span></div>
-<div class="wp-block-button wc-block-grid__product-add-to-cart"><a href="{{ game.link }}" aria-label="Add &ldquo;{{ game.name }}&rdquo; to your cart" data-quantity="1" data-product_id="403" data-product_sku="" rel="nofollow" class="wp-block-button__link add_to_cart_button ajax_add_to_cart">Add to cart</a></div>
+<div class="wp-block-button wc-block-grid__product-add-to-cart"><a href="{{ game.link }}" aria-label="Add &ldquo;{{ game.name }}&rdquo; to your cart" data-quantity="1" data-product_id="{{ game.productid }}" data-product_sku="" rel="nofollow" class="wp-block-button__link add_to_cart_button ajax_add_to_cart">Add to cart</a></div>
 </div>
 </div>
 </li>
