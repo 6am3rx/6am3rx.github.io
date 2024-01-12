@@ -4,11 +4,13 @@
   price: 26.00
   image: product-121-300x384.jpg
   link: ?add-to-cart=403
+  link1: /dude
+  productid: 403
 
 - name: A HUNDRED THOUSAND
   rating: 3.50
   crating: 2
-  price: 26.00
+  price: 26.56
   image: product-61-1-300x384.jpg
   link: ?add-to-cart=403
   link1: /dude
@@ -26,7 +28,7 @@
 - name: A HUNDRED THOUSAND
   rating: 3.50
   crating: 2
-  price: 26.00
+  price: 29.93
   image: product-41-300x384.jpg
   link: ?add-to-cart=403
   link1: /dude
