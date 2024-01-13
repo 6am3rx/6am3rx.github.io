@@ -1,13 +1,13 @@
 {% for slide in site.data.slider %}
 {% include divbegin.html var="nk-image-slider-item" %}
     <noscript><img decoding="async" data-skip-lazy src="/images/{{ slide.image }}.jpg" alt="" class="nk-image-slider-img" data-thumb="/images/{{ slide.image }}-150x150.jpg"></noscript><img decoding="async" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTIwMCIgaGVpZ2h0PSI2NzUiIHZpZXdCb3g9IjAgMCAxMjAwIDY3NSIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48L3N2Zz4=" alt class="nk-image-slider-img vp-lazyload" data-thumb="/images/{{ slide.image }}-150x150.jpg" data-src="/images/{{ slide.image }}.jpg" data-sizes="auto" loading="eager">
-    {% include divbegin.html var="nk-image-slider-content" %}
     {% if slide.header And slide.header != "" And slide.header != nil %}
+    {% include divbegin.html var="nk-image-slider-content" %}
     <h3 class="h4">{{ slide.header }}</h3>
     <p class="text-white">{{ slide.text }}</p>
     <a href="#" class="nk-btn nk-btn-rounded nk-btn-color-white nk-btn-hover-color-main-1">Read More</a>
-{% else %}
-{% endif %}
     {% include divend.html %}
+    {% else %}
+{% endif %}
 {% include divend.html %}
 {% endfor %}
