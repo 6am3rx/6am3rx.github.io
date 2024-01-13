@@ -20,7 +20,7 @@
 
 <article id="post-12" class="post-12 page type-page status-publish hentry">
 
-<div class="entry-content">
+{% include divbegin.html var="entry-content"%}
 {% include slider.html %}
 {% include grid.html %}
 {% include spliter.html customclass=" ghostkit-custom-1IOFOw" span="Latest" text="news" %}
@@ -44,7 +44,7 @@
 {% include divend.html %}{% include divend.html %}
 {% include widget2.html %}
 {% include divend.html %}{% include divend.html %}
-{% include empdiv.html var="clearfix" %}    </div><!-- .entry-content -->
+{% include empdiv.html var="clearfix" %}{% include divend.html %}<!-- .entry-content -->
 </article><!-- #post-## -->
 {% include empdiv.html var="nk-gap-2" %}
 </div>
