@@ -15,11 +15,9 @@
 
 <div id="primary" class="content-area container">
 <main id="main" class="site-main" role="main">
-<div class="row">
-<div class="col-lg-12">
-
-<article id="post-12" class="post-12 page type-page status-publish hentry">
-
+{% include divbegin.html var="row" %}
+{% include divbegin.html var="col-lg-12" %}
+{% include articlebegin.html var1="post-12" var="post-12 page type-page status-publish hentry" %}
 {% include divbegin.html var="entry-content" %}
 {% include slider.html %}
 {% include grid.html %}
@@ -45,10 +43,9 @@
 {% include widget2.html %}
 {% include divend.html %}{% include divend.html %}
 {% include empdiv.html var="clearfix" %}{% include divend.html %}<!-- .entry-content -->
-</article><!-- #post-## -->
+{% include articlend.html %}<!-- #post-## -->
 {% include empdiv.html var="nk-gap-2" %}
-</div>
-</div>
+{% include divend.html %}{% include divend.html %}
 </main><!-- .site-main -->
 </div><!-- .content-area -->
 
