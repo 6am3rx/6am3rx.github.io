@@ -1,13 +1,11 @@
-<div class="wp-block-visual-portfolio ghostkit-custom-2pVI05">
-
+{% include divbegin.html var="wp-block-visual-portfolio ghostkit-custom-2pVI05" %}
     <div class="vp-portfolio vp-uid-e6546205 vp-id-32" data-vp-layout="grid" data-vp-content-source="post-based" data-vp-items-style="squadforce-list" data-vp-items-click-action="url" data-vp-items-gap="30" data-vp-items-gap-vertical="" data-vp-pagination="load-more" data-vp-next-page-url="/squadforce/?vp_page=2" data-vp-grid-columns="4" >
     <div class="vp-portfolio__preloader-wrap">
     <div class="vp-portfolio__preloader">
     <img decoding="async" loading="eager" src="https://wp.nkdev.info/squadforce/wp-content/plugins/visual-portfolio/assets/images/logo-dark.svg" alt="Visual Portfolio, Posts &amp; Image Gallery for WordPress" width="20" height="20" data-skip-lazy>
     </div>
     </div>
-    <div class="vp-portfolio__items-wrap">
-    
+    {% include divbegin.html var="vp-portfolio__items-wrap" %}
     {% include divbegin.html var="vp-portfolio__items vp-portfolio__items-style-squadforce-list" %}
     <article class="vp-portfolio__item-wrap post-159 post type-post status-publish format-standard has-post-thumbnail hentry category-strategy vp-portfolio__item-uid-bfadf96f" data-vp-filter="strategy">
     
@@ -139,7 +137,7 @@
     </figure>
     </article>
     {% include divend.html %}
-    </div>
+    {% include divend.html %}
     
     </div>
-    </div>
+    {% include divend.html %}
