@@ -5,7 +5,7 @@
     {% include divbegin.html var="nk-image-slider-content" %}
     <h3 class="h4">{{ slide.header }}</h3>
     <p class="text-white">{{ slide.text }}</p>
-    <a href="#" class="nk-btn nk-btn-rounded nk-btn-color-white nk-btn-hover-color-main-1">Read More</a>
+    {% if slide.link And slide.link != "" And slide.link != nil %}<a href="{{ slide.link }}" class="nk-btn nk-btn-rounded nk-btn-color-white nk-btn-hover-color-main-1">Read More</a>{% endif %}
     {% include divend.html %}
     {% else %}
 {% endif %}
