@@ -26,11 +26,8 @@
 {% include spliter.html customclass=" ghostkit-custom-1IOFOw" span="Latest" text="news" %}
 {% include newsbox.html %}
 {% include gamelist.html %}
-
-
-
-<div class="ghostkit-grid ghostkit-grid-gap-md">
-<div class="ghostkit-grid-inner">
+{% include divbegin.html var="ghostkit-grid ghostkit-grid-gap-md"%}
+{% include divbegin.html var="ghostkit-grid-inner"%}
 {% include divbegin.html var="ghostkit-col ghostkit-col-md-12 ghostkit-col-lg-12 ghostkit-col-8"%}
 {% include divbegin.html var="ghostkit-col-content"%}
 {% include spliter.html customclass=" ghostkit-custom-1H35Ox" span="Latest" text="Posts" %}
@@ -46,9 +43,8 @@
 {% include blockgrid.html %}
 {% include divend.html %}{% include divend.html %}
 {% include widget2.html %}
-</div></div>
+{% include divend.html %}{% include divend.html %}
 {% include empdiv.html var="clearfix" %}    </div><!-- .entry-content -->
-
 </article><!-- #post-## -->
 {% include empdiv.html var="nk-gap-2" %}
 </div>
