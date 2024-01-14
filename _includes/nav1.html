@@ -70,7 +70,8 @@
     </ul>
     </li>
     {% for nav in site.data.nav.nav1 %}
-    <li id="menu-item-{{ nav.id }}" class="{{ nav.class }} ghost_menu__item--{{ nav.id }} menu-item-{{ nav.id }}"><a target="_blank" href="{{ nav.link }}">{{ nav.name }}</a>
+    <li id="menu-item-{{ nav.id }}" class="{{ nav.class }} ghost_menu__item--{{ nav.id }} menu-item-{{ nav.id }}">
+    <a {% if nav.linktarget And nav.linktarget != "" And nav.linktarget != nil %}target="{{ nav.linktarget }}" {% endif %}href="{{ nav.link }}">{{ nav.name }}</a>
     </li>
     {% endfor %}
     </ul>                                                
