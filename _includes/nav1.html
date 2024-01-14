@@ -70,8 +70,7 @@
     </ul>
     </li>
     {% for nav in site.data.nav.nav1 %}
-    <li id="menu-item-{{ nav.id }}" class="menu-item menu-item-type-custom menu-item-object-custom ghost_menu__item ghost_menu__item--{{ nav.id }} menu-item-{{ nav.id }}">
-        <a target="_blank" href="{{ nav.link }}">{{ nav.name }}</a>
+    <li id="menu-item-{{ nav.id }}" class="{{ nav.class }} ghost_menu__item--{{ nav.id }} menu-item-{{ nav.id }}"><a target="_blank" href="{{ nav.link }}">{{ nav.name }}</a>
     </li>
     {% endfor %}
     </ul>                                                
