@@ -69,7 +69,11 @@
     <li id="menu-item-449" class="menu-item menu-item-type-post_type menu-item-object-page ghost_menu__sub-menu__item ghost_menu__sub-menu--1__item ghost_menu__item--449 menu-item-449"><a href="https://wp.nkdev.info/squadforce/cart/">Cart</a></li>
     </ul>
     </li>
-    <li id="menu-item-938" class="menu-item menu-item-type-custom menu-item-object-custom ghost_menu__item ghost_menu__item--938 menu-item-938"><a target="_blank" href="https://1.envato.market/squadforce-wp-info">Buy Now</a></li>
+    {% for nav in site.data.nav.nav1 %}
+    <li id="menu-item-{{ nav.id }}" class="menu-item menu-item-type-custom menu-item-object-custom ghost_menu__item ghost_menu__item--{{ nav.id }} menu-item-{{ nav.id }}">
+        <a target="_blank" href="{{ nav.link }}">{{ nav.name }}</a>
+    </li>
+    {% endfor %}
     </ul>                                                
     <ul class="nk-nav nk-nav-right nk-nav-icons">
     <li class="single-icon d-lg-none">

@@ -4,4 +4,10 @@ icons:
   - name: nk-t-2
 
   - name: nk-t-3
+nav1:
+  - id: 938
+    link: "https://1.envato.market/squadforce-wp-info"
+    name: Buy Now
+    custom: 1
+    linktarget: _blank
   
