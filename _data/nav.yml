@@ -6,6 +6,12 @@ icons:
   - name: nk-t-3
 nav1:
   - id: 938
+    link: /gallery
+    class: menu-item menu-item-type-post_type menu-item-object-page ghost_menu__item
+    name: Gallery
+    custom: 1
+
+  - id: 938
     link: "https://ju3tin.github.io"
     class: menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children ghost_menu__item nk-drop-item
     name: esports

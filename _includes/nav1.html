@@ -49,16 +49,6 @@
     <li id="menu-item-248" class="menu-item menu-item-type-post_type menu-item-object-post ghost_menu__sub-menu__item ghost_menu__sub-menu--1__item ghost_menu__item--248 menu-item-248"><a href="https://wp.nkdev.info/squadforce/grab-your-sword-and-fight-the-horde/">Single Post</a></li>
     </ul>
     </li>
-    <li id="menu-item-241" class="menu-item menu-item-type-post_type menu-item-object-page ghost_menu__item ghost_menu__item--241 menu-item-241"><a href="https://wp.nkdev.info/squadforce/gallery/">Gallery</a></li>
-    <li id="menu-item-752" class="menu-item menu-item-type-post_type_archive menu-item-object-team menu-item-has-children ghost_menu__item nk-drop-item ghost_menu__item--752 menu-item-752"><a href="https://wp.nkdev.info/squadforce/teams/">eSports</a>
-    <ul class="dropdown sub-menu">
-    <li id="menu-item-755" class="menu-item menu-item-type-post_type_archive menu-item-object-team ghost_menu__sub-menu__item ghost_menu__sub-menu--1__item ghost_menu__item--755 menu-item-755"><a href="https://wp.nkdev.info/squadforce/teams/">Teams</a></li>
-    <li id="menu-item-754" class="menu-item menu-item-type-post_type_archive menu-item-object-player ghost_menu__sub-menu__item ghost_menu__sub-menu--1__item ghost_menu__item--754 menu-item-754"><a href="https://wp.nkdev.info/squadforce/players/">Players</a></li>
-    <li id="menu-item-768" class="menu-item menu-item-type-post_type_archive menu-item-object-tournament ghost_menu__sub-menu__item ghost_menu__sub-menu--1__item ghost_menu__item--768 menu-item-768"><a href="https://wp.nkdev.info/squadforce/tournaments/">Tournaments</a></li>
-    <li id="menu-item-771" class="menu-item menu-item-type-post_type_archive menu-item-object-match ghost_menu__sub-menu__item ghost_menu__sub-menu--1__item ghost_menu__item--771 menu-item-771"><a href="https://wp.nkdev.info/squadforce/matches/">Matches</a></li>
-    <li id="menu-item-753" class="menu-item menu-item-type-post_type_archive menu-item-object-game ghost_menu__sub-menu__item ghost_menu__sub-menu--1__item ghost_menu__item--753 menu-item-753"><a href="https://wp.nkdev.info/squadforce/games/">Games</a></li>
-    </ul>
-    </li>
     {% for nav in site.data.nav.nav1 %}
     <li id="menu-item-{{ nav.id }}" class="{{ nav.class }} ghost_menu__item--{{ nav.id }} menu-item-{{ nav.id }}"><a {% if nav.linktarget And nav.linktarget != "" And nav.linktarget != nil %}target="{{ nav.linktarget }}" {% endif %}href="{{ nav.link }}">{{ nav.name }}</a>
     {% if nav.submenu And nav.submenu != "" And nav.submenu != nil %} 
