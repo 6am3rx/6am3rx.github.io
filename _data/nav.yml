@@ -20,7 +20,32 @@ nav1:
             link: /iconbox
             name: Icon Box
             class: menu-item menu-item-type-post_type menu-item-object-page ghost_menu__sub-menu__item ghost_menu__sub-menu--2__item
-
+      - id: 1002
+        link: /widgets
+        name: widgets
+        class: menu-item menu-item-type-post_type menu-item-object-page ghost_menu__sub-menu__item ghost_menu__sub-menu--1__item
+      - id: 1002
+        link: /contentformatting
+        name: content formatting
+        class: menu-item menu-item-type-post_type menu-item-object-page ghost_menu__sub-menu__item ghost_menu__sub-menu--1__item
+      - id: 1002
+        link: /animate-on-scroll
+        name: animate on scroll
+        class: menu-item menu-item-type-post_type menu-item-object-page ghost_menu__sub-menu__item ghost_menu__sub-menu--1__item
+      - id: 1002
+        link: /forms
+        name: forms
+        class: menu-item menu-item-type-post_type menu-item-object-page ghost_menu__sub-menu__item ghost_menu__sub-menu--1__item
+      - id: 1002
+        link: /bbpressforums
+        name: bbPress Forums
+        class: menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children nk-drop-item ghost_menu__sub-menu__item ghost_menu__sub-menu--1__item
+        submenu:
+          - id: 467
+            link: /iconbox
+            name: Icon Box
+            class: menu-item menu-item-type-post_type menu-item-object-page ghost_menu__sub-menu__item ghost_menu__sub-menu--2__item
+      
 
   - id: 938
     link: "https://ju3tin.github.io"
