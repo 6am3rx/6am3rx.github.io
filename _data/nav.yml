@@ -45,6 +45,10 @@ nav1:
             link: /iconbox
             name: Icon Box
             class: menu-item menu-item-type-post_type menu-item-object-page ghost_menu__sub-menu__item ghost_menu__sub-menu--2__item
+      - id: 1002
+        link: /404
+        name: 404 page
+        class: menu-item menu-item-type-post_type menu-item-object-page ghost_menu__sub-menu__item ghost_menu__sub-menu--1__item
       
 
   - id: 938
