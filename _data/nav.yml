@@ -5,6 +5,56 @@ icons:
 
   - name: nk-t-3
 nav1:
+  - id: 1019
+    link: "#"
+    class: menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children ghost_menu__item nk-drop-item
+    name: features
+    custom: 1
+    submenu:
+      - id: 1002
+        link: /blocks
+        name: blocks
+        class: menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children nk-drop-item ghost_menu__sub-menu__item ghost_menu__sub-menu--1__item
+        submenu:
+          - id: 467
+            link: /iconbox
+            name: Icon Box
+            class: menu-item menu-item-type-post_type menu-item-object-page ghost_menu__sub-menu__item ghost_menu__sub-menu--2__item
+
+
+  - id: 938
+    link: "https://ju3tin.github.io"
+    class: menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children ghost_menu__item nk-drop-item
+    name: blog
+    custom: 1
+    submenu:
+
+      - id: 45
+        link: /news
+        class: menu-item menu-item-type-post_type menu-item-object-page ghost_menu__sub-menu__item ghost_menu__sub-menu--1__item
+        name: news
+
+      - id: 45
+        link: /bloggrid
+        class: menu-item menu-item-type-post_type menu-item-object-page ghost_menu__sub-menu__item ghost_menu__sub-menu--1__item
+        name: Blog Grid
+
+      - id: 45
+        link: /bloglist
+        class: menu-item menu-item-type-post_type menu-item-object-page ghost_menu__sub-menu__item ghost_menu__sub-menu--1__item
+        name: Blog List
+
+      - id: 45
+        link: /blogfullwidth
+        class: menu-item menu-item-type-post_type menu-item-object-page ghost_menu__sub-menu__item ghost_menu__sub-menu--1__item
+        name: blog fullwidth
+
+      - id: 45
+        link: /singlepost
+        class: menu-item menu-item-type-post_type menu-item-object-page ghost_menu__sub-menu__item ghost_menu__sub-menu--1__item
+        name: single post
+
+
   - id: 938
     link: /gallery
     class: menu-item menu-item-type-post_type menu-item-object-page ghost_menu__item
@@ -49,7 +99,6 @@ nav1:
     class: menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children ghost_menu__item nk-drop-item
     name: Shop
     custom: 1
-    linktarget: _blank
     submenu:
 
       - id: 45

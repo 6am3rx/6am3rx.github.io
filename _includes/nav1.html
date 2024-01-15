@@ -40,21 +40,22 @@
     <li id="menu-item-455" class="menu-item menu-item-type-custom menu-item-object-custom ghost_menu__sub-menu__item ghost_menu__sub-menu--1__item ghost_menu__item--455 menu-item-455"><a href="https://wp.nkdev.info/squadforce/404">404 Page</a></li>
     </ul>
     </li>
-    <li id="menu-item-239" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children ghost_menu__item nk-drop-item ghost_menu__item--239 menu-item-239"><a href="https://wp.nkdev.info/squadforce/blog-grid/">Blog</a>
-    <ul class="dropdown sub-menu">
-    <li id="menu-item-243" class="menu-item menu-item-type-post_type menu-item-object-page ghost_menu__sub-menu__item ghost_menu__sub-menu--1__item ghost_menu__item--243 menu-item-243"><a href="https://wp.nkdev.info/squadforce/news/">News</a></li>
-    <li id="menu-item-245" class="menu-item menu-item-type-post_type menu-item-object-page ghost_menu__sub-menu__item ghost_menu__sub-menu--1__item ghost_menu__item--245 menu-item-245"><a href="https://wp.nkdev.info/squadforce/blog-grid/">Blog Grid</a></li>
-    <li id="menu-item-240" class="menu-item menu-item-type-post_type menu-item-object-page ghost_menu__sub-menu__item ghost_menu__sub-menu--1__item ghost_menu__item--240 menu-item-240"><a href="https://wp.nkdev.info/squadforce/blog-list/">Blog List</a></li>
-    <li id="menu-item-247" class="menu-item menu-item-type-post_type menu-item-object-page ghost_menu__sub-menu__item ghost_menu__sub-menu--1__item ghost_menu__item--247 menu-item-247"><a href="https://wp.nkdev.info/squadforce/blog-fullwidth/">Blog Fullwidth</a></li>
-    <li id="menu-item-248" class="menu-item menu-item-type-post_type menu-item-object-post ghost_menu__sub-menu__item ghost_menu__sub-menu--1__item ghost_menu__item--248 menu-item-248"><a href="https://wp.nkdev.info/squadforce/grab-your-sword-and-fight-the-horde/">Single Post</a></li>
-    </ul>
-    </li>
     {% for nav in site.data.nav.nav1 %}
     <li id="menu-item-{{ nav.id }}" class="{{ nav.class }} ghost_menu__item--{{ nav.id }} menu-item-{{ nav.id }}"><a {% if nav.linktarget And nav.linktarget != "" And nav.linktarget != nil %}target="{{ nav.linktarget }}" {% endif %}href="{{ nav.link }}">{{ nav.name }}</a>
     {% if nav.submenu And nav.submenu != "" And nav.submenu != nil %} 
     <ul class="dropdown sub-menu">
     {% for menu in nav.submenu %}
-    <li id="menu-item-{{ menu.id }}" class="{{ menu.class }} ghost_menu__item--{{ menu.id }} menu-item-{{ menu.id }}"><a {% if menu.linktarget And menu.linktarget != "" And menu.linktarget != nil %}target="{{ menu.linktarget }}" {% endif %}href="{{ menu.link }}">{{ menu.name }}</a></li>
+    <li id="menu-item-{{ menu.id }}" class="{{ menu.class }} ghost_menu__item--{{ menu.id }} menu-item-{{ menu.id }}"><a {% if menu.linktarget And menu.linktarget != "" And menu.linktarget != nil %}target="{{ menu.linktarget }}" {% endif %}href="{{ menu.link }}">{{ menu.name }}</a>
+<!--submenu1-->
+{% if menu.submenu And menu.submenu != "" And menu.submenu != nil %} 
+    <ul class="dropdown sub-menu">
+    {% for menusub in menu.submenu %}
+    <li id="menu-item-{{ menusub.id }}" class="{{ menusub.class }} ghost_menu__item--{{ menusub.id }} menu-item-{{ menusub.id }}"><a {% if menusub.linktarget And menusub.linktarget != "" And menusub.linktarget != nil %}target="{{ menusub.linktarget }}" {% endif %}href="{{ menusub.link }}">{{ menusub.name }}</a></li>
+    {% endfor %}
+    </ul>
+    {% endif %}
+<!--end-->
+</li>
     {% endfor %}
     </ul>
     {% endif %}
