@@ -59,19 +59,15 @@
     <li id="menu-item-753" class="menu-item menu-item-type-post_type_archive menu-item-object-game ghost_menu__sub-menu__item ghost_menu__sub-menu--1__item ghost_menu__item--753 menu-item-753"><a href="https://wp.nkdev.info/squadforce/games/">Games</a></li>
     </ul>
     </li>
-    <li id="menu-item-443" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children ghost_menu__item nk-drop-item ghost_menu__item--443 menu-item-443"><a href="https://wp.nkdev.info/squadforce/shop/">Shop</a>
-    <ul class="dropdown sub-menu">
-    <li id="menu-item-560" class="menu-item menu-item-type-post_type menu-item-object-page ghost_menu__sub-menu__item ghost_menu__sub-menu--1__item ghost_menu__item--560 menu-item-560"><a href="https://wp.nkdev.info/squadforce/store/">Store</a></li>
-    <li id="menu-item-444" class="menu-item menu-item-type-post_type menu-item-object-page ghost_menu__sub-menu__item ghost_menu__sub-menu--1__item ghost_menu__item--444 menu-item-444"><a href="https://wp.nkdev.info/squadforce/shop/">Catalog</a></li>
-    <li id="menu-item-445" class="menu-item menu-item-type-post_type menu-item-object-page ghost_menu__sub-menu__item ghost_menu__sub-menu--1__item ghost_menu__item--445 menu-item-445"><a href="https://wp.nkdev.info/squadforce/action-games/">Catalog alt</a></li>
-    <li id="menu-item-446" class="menu-item menu-item-type-post_type menu-item-object-product ghost_menu__sub-menu__item ghost_menu__sub-menu--1__item ghost_menu__item--446 menu-item-446"><a href="https://wp.nkdev.info/squadforce/product/just-then-her-head/">Product</a></li>
-    <li id="menu-item-448" class="menu-item menu-item-type-post_type menu-item-object-page ghost_menu__sub-menu__item ghost_menu__sub-menu--1__item ghost_menu__item--448 menu-item-448"><a href="https://wp.nkdev.info/squadforce/checkout/">Checkout</a></li>
-    <li id="menu-item-449" class="menu-item menu-item-type-post_type menu-item-object-page ghost_menu__sub-menu__item ghost_menu__sub-menu--1__item ghost_menu__item--449 menu-item-449"><a href="https://wp.nkdev.info/squadforce/cart/">Cart</a></li>
-    </ul>
-    </li>
     {% for nav in site.data.nav.nav1 %}
-    <li id="menu-item-{{ nav.id }}" class="{{ nav.class }} ghost_menu__item--{{ nav.id }} menu-item-{{ nav.id }}">
-    <a {% if nav.linktarget And nav.linktarget != "" And nav.linktarget != nil %}target="{{ nav.linktarget }}" {% endif %}href="{{ nav.link }}">{{ nav.name }}</a>
+    <li id="menu-item-{{ nav.id }}" class="{{ nav.class }} ghost_menu__item--{{ nav.id }} menu-item-{{ nav.id }}"><a {% if nav.linktarget And nav.linktarget != "" And nav.linktarget != nil %}target="{{ nav.linktarget }}" {% endif %}href="{{ nav.link }}">{{ nav.name }}</a>
+    {% if nav.submenu And nav.submenu != "" And nav.submenu != nil %} 
+    <ul class="dropdown sub-menu">
+    {% for menu in nav.submenu %}
+    <li id="menu-item-{{ menu.id }}" class="{{ menu.class }} ghost_menu__item--{{ menu.id }} menu-item-{{ menu.id }}"><a {% if menu.linktarget And menu.linktarget != "" And menu.linktarget != nil %}target="{{ menu.linktarget }}" {% endif %}href="{{ menu.link }}">{{ menu.name }}</a></li>
+    {% endfor %}
+    </ul>
+    {% endif %}
     </li>
     {% endfor %}
     </ul>                                                

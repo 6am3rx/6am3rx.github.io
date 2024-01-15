@@ -6,7 +6,80 @@ icons:
   - name: nk-t-3
 nav1:
   - id: 938
-    link: "https://1.envato.market/squadforce-wp-info"
+    link: "https://ju3tin.github.io"
+    class: menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children ghost_menu__item nk-drop-item
+    name: esports
+    custom: 1
+    linktarget: _blank
+    submenu:
+
+      - id: 45
+        link: /teams
+        class: menu-item menu-item-type-post_type menu-item-object-page ghost_menu__sub-menu__item ghost_menu__sub-menu--1__item
+        name: Teams
+
+      - id: 45
+        link: /players
+        class: menu-item menu-item-type-post_type menu-item-object-page ghost_menu__sub-menu__item ghost_menu__sub-menu--1__item
+        name: players
+
+      - id: 45
+        link: /tournaments
+        class: menu-item menu-item-type-post_type menu-item-object-page ghost_menu__sub-menu__item ghost_menu__sub-menu--1__item
+        name: tournaments
+
+      - id: 45
+        link: /matches
+        class: menu-item menu-item-type-post_type menu-item-object-page ghost_menu__sub-menu__item ghost_menu__sub-menu--1__item
+        name: matches
+
+      - id: 45
+        link: /games
+        class: menu-item menu-item-type-post_type menu-item-object-page ghost_menu__sub-menu__item ghost_menu__sub-menu--1__item
+        name: games
+
+  - id: 938
+    link: "https://ju3tin.github.io"
+    class: menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children ghost_menu__item nk-drop-item
+    name: Shop
+    custom: 1
+    linktarget: _blank
+    submenu:
+
+      - id: 45
+        link: /store
+        class: menu-item menu-item-type-post_type menu-item-object-page ghost_menu__sub-menu__item ghost_menu__sub-menu--1__item
+        name: Store
+
+      - id: 45
+        link: /catalog
+        class: menu-item menu-item-type-post_type menu-item-object-page ghost_menu__sub-menu__item ghost_menu__sub-menu--1__item
+        name: catalog
+
+      - id: 45
+        link: /catalogalt
+        class: menu-item menu-item-type-post_type menu-item-object-page ghost_menu__sub-menu__item ghost_menu__sub-menu--1__item
+        name: Catalog alt
+
+      - id: 45
+        link: /product
+        class: menu-item menu-item-type-post_type menu-item-object-page ghost_menu__sub-menu__item ghost_menu__sub-menu--1__item
+        name: product
+
+      - id: 45
+        link: /checkout
+        class: menu-item menu-item-type-post_type menu-item-object-page ghost_menu__sub-menu__item ghost_menu__sub-menu--1__item
+        name: Checkout
+
+      - id: 45
+        link: /cart
+        class: menu-item menu-item-type-post_type menu-item-object-page ghost_menu__sub-menu__item ghost_menu__sub-menu--1__item
+        name: Cart
+
+
+
+  - id: 938
+    link: "https://ju3tin.github.io"
     class: menu-item menu-item-type-custom menu-item-object-custom ghost_menu__item
     name: Buy Now
     custom: 1
