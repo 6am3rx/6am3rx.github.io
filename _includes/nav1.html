@@ -1,7 +1,7 @@
 <nav class="nk-navbar nk-navbar-top nk-navbar-sticky nk-navbar-autohide">
     <div class="container">
     <div class="nk-nav-table">
-    <a href="https://wp.nkdev.info/squadforce/" class="nk-nav-logo"><img src="/images/logo.svg" style="width: 197px; height: auto;" alt="" /></a>
+    <a href="https://wp.nkdev.info/squadforce/" class="nk-nav-logo"><img src="{{ site.imglogo }}" style="width: 197px; height: auto;" alt="" /></a>
     <ul id="menu-main-menu" class="nk-nav nk-nav-right d-none d-lg-table-cell" data-nav-mobile="#nk-nav-mobile">
     {% for nav in site.data.nav.nav1 %}
     <li id="menu-item-{{ nav.id }}" class="{{ nav.class }} ghost_menu__item--{{ nav.id }} menu-item-{{ nav.id }}"><a {% if nav.linktarget And nav.linktarget != "" And nav.linktarget != nil %}target="{{ nav.linktarget }}" {% endif %}href="{{ nav.link }}">{{ nav.name }}</a>
