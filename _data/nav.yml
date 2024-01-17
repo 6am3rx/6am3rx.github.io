@@ -20,6 +20,22 @@ nav1:
             link: /iconbox
             name: Icon Box
             class: menu-item menu-item-type-post_type menu-item-object-page ghost_menu__sub-menu__item ghost_menu__sub-menu--2__item
+          - id: 467
+            link: /numberbox
+            name: Number Box
+            class: menu-item menu-item-type-post_type menu-item-object-page ghost_menu__sub-menu__item ghost_menu__sub-menu--2__item
+          - id: 467
+            link: /accordion
+            name: Accordion
+            class: menu-item menu-item-type-post_type menu-item-object-page ghost_menu__sub-menu__item ghost_menu__sub-menu--2__item
+          - id: 467
+            link: /tabs
+            name: Tabs
+            class: menu-item menu-item-type-post_type menu-item-object-page ghost_menu__sub-menu__item ghost_menu__sub-menu--2__item
+          - id: 467
+            link: /button
+            name: Button
+            class: menu-item menu-item-type-post_type menu-item-object-page ghost_menu__sub-menu__item ghost_menu__sub-menu--2__item
       - id: 1002
         link: /widgets
         name: widgets
