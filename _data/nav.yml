@@ -80,6 +80,10 @@ nav1:
             link: /instagram
             name: instagram
             class: menu-item menu-item-type-post_type menu-item-object-page ghost_menu__sub-menu__item ghost_menu__sub-menu--2__item
+          - id: 467
+            link: /twitter
+            name: twitter
+            class: menu-item menu-item-type-post_type menu-item-object-page ghost_menu__sub-menu__item ghost_menu__sub-menu--2__item
 
       - id: 1002
         link: /widgets
