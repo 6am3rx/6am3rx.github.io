@@ -36,6 +36,51 @@ nav1:
             link: /button
             name: Button
             class: menu-item menu-item-type-post_type menu-item-object-page ghost_menu__sub-menu__item ghost_menu__sub-menu--2__item
+          - id: 467
+            link: /countdown
+            name: count down
+            class: menu-item menu-item-type-post_type menu-item-object-page ghost_menu__sub-menu__item ghost_menu__sub-menu--2__item
+          - id: 467
+            link: /grid
+            name: grid
+            class: menu-item menu-item-type-post_type menu-item-object-page ghost_menu__sub-menu__item ghost_menu__sub-menu--2__item
+          - id: 467
+            link: /video
+            name: video
+            class: menu-item menu-item-type-post_type menu-item-object-page ghost_menu__sub-menu__item ghost_menu__sub-menu--2__item
+          - id: 467
+            link: /alert
+            name: alert
+            class: menu-item menu-item-type-post_type menu-item-object-page ghost_menu__sub-menu__item ghost_menu__sub-menu--2__item
+          - id: 467
+            link: /progress
+            name: progress
+            class: menu-item menu-item-type-post_type menu-item-object-page ghost_menu__sub-menu__item ghost_menu__sub-menu--2__item
+          - id: 467
+            link: /tables
+            name: tables
+            class: menu-item menu-item-type-post_type menu-item-object-page ghost_menu__sub-menu__item ghost_menu__sub-menu--2__item
+          - id: 467
+            link: /pricingtable
+            name: pricing table
+            class: menu-item menu-item-type-post_type menu-item-object-page ghost_menu__sub-menu__item ghost_menu__sub-menu--2__item
+          - id: 467
+            link: /testimonal
+            name: testimonal
+            class: menu-item menu-item-type-post_type menu-item-object-page ghost_menu__sub-menu__item ghost_menu__sub-menu--2__item
+          - id: 467
+            link: /divider
+            name: divider
+            class: menu-item menu-item-type-post_type menu-item-object-page ghost_menu__sub-menu__item ghost_menu__sub-menu--2__item
+          - id: 467
+            link: /googlemaps
+            name: google maps
+            class: menu-item menu-item-type-post_type menu-item-object-page ghost_menu__sub-menu__item ghost_menu__sub-menu--2__item
+          - id: 467
+            link: /instagram
+            name: instagram
+            class: menu-item menu-item-type-post_type menu-item-object-page ghost_menu__sub-menu__item ghost_menu__sub-menu--2__item
+
       - id: 1002
         link: /widgets
         name: widgets
