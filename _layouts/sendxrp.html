@@ -11,12 +11,11 @@
     </style>
     <script src='https://unpkg.com/xrpl@2.7.0/build/xrpl-latest-min.js'></script>
     <script src='/js/ripplex1-send-xrp.js'></script>
-    <script src='/js/ripplex2-send-currency.js'></script>
-    <script src='/js/ripplex3-mint-nfts.js'></script>
     <script>
       if (typeof module !== "undefined") {
         const xrpl = require('xrpl')
       }
+
     </script>
   </head>
   
@@ -104,7 +103,7 @@
                         <br>
                       </td>
                     </tr>
-                    <tr>
+                   <tr>
                       <td align="right">
                         Destination
                       </td>
@@ -113,41 +112,8 @@
                         <br>
                       </td>
                     </tr>
-                    <tr valign="top">
-                      <td><button type="button" onClick="configureAccount('standby',document.querySelector('#standbyDefault').checked)">Configure Account</button></td>
-                      <td>
-                        <input type="checkbox" id="standbyDefault" checked="true"/>
-                        <label for="standbyDefault">Allow Rippling</label>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td align="right">
-                        Currency
-                      </td>
-                      <td>
-                        <input type="text" id="standbyCurrencyField" size="40" value="USD"></input>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td align="right">NFT URL</td>
-                      <td><input type="text" id="standbyTokenUrlField"
-                        value = "ipfs://bafybeigdyrzt5sfp7udm7hu76uh7y26nf4dfuylqabf3oclgtqy55fbzdi" size="80"/>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td align="right">Flags</td>
-                      <td><input type="text" id="standbyFlagsField" value="1" size="10"/></td>
-                    </tr>
-                    <tr>
-                      <td align="right">NFT ID</td>
-                      <td><input type="text" id="standbyTokenIdField" value="" size="80"/></td>
-                    </tr>
-				            <tr>
-				  	          <td align="right">Transfer Fee</td>
-					            <td><input type="text" id="standbyTransferFeeField" value="" size="80"/></td>
-				            </tr>
                   </table>
-                  <p align="left">
+                  <p align="right">
                     <textarea id="standbyResultField" cols="80" rows="20" ></textarea>
                   </p>
                 </td>
@@ -157,18 +123,6 @@
                     <tr valign="top">
                       <td align="center" valign="top">
                         <button type="button" onClick="sendXRP()">Send XRP&#62;</button>
-                        <br/><br/>
-                        <button type="button" onClick="createTrustline()">Create TrustLine</button>
-                        <br/>
-                        <button type="button" onClick="sendCurrency()">Send Currency</button>
-                        <br/>
-                        <button type="button" onClick="getBalances()">Get Balances</button>
-                        <br/><br/>
-                        <button type="button" onClick="mintToken()">Mint NFT</button>
-                        <br/>
-                        <button type="button" onClick="getTokens()">Get NFTs</button>
-                        <br/>
-                        <button type="button" onClick="burnToken()">Burn NFT</button>
                       </td>
                     </tr>
                     </td>
@@ -182,25 +136,13 @@
             <table>
               <tr>
                 <td>
-                <td>
                   <table>
                     <tr>
                       <td align="center" valign="top">
-                        <button type="button" onClick="oPsendXRP()">&#60; Send XRP</button>
-                        <br/><br/>
-                        <button type="button" onClick="oPcreateTrustline()">Create TrustLine</button>
-                        <br/>
-                        <button type="button" onClick="oPsendCurrency()">Send Currency</button>
-                        <br/>
-                        <button type="button" onClick="getBalances()">Get Balances</button>
-                        <br/><br/>
-                        <button type="button" onClick="oPmintToken()">Mint NFT</button>
-                        <br/>
-                        <button type="button" onClick="oPgetTokens()">Get NFTs</button>
-                        <br/>
-                        <button type="button" onClick="oPburnToken()">Burn NFT</button>
-                      <td valign="top" align="right">
-                        <button type="button" onClick="getAccount('operational')">Get New Operational Account</button>
+                        <button type="button" onClick="oPsendXRP()">&#60;Send XRP</button>
+                        </td>
+                        <td align="right">
+                          <button type="button" onClick="getAccount('operational')">Get New Operational Account</button>
                         <table>
                           <tr valign="top">
                             <td align="right">
@@ -265,41 +207,7 @@
                               <br>
                             </td>
                           </tr>
-                          <tr>
-                            <td>
-                            </td>
-                            <td align="right">                        <input type="checkbox" id="operationalDefault" checked="true"/>
-                              <label for="operationalDefault">Allow Rippling</label>
-                              <button type="button" onClick="configureAccount('operational',document.querySelector('#operationalDefault').checked)">Configure Account</button>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td align="right">
-                              Currency
-                            </td>
-                            <td>
-                              <input type="text" id="operationalCurrencyField" size="40" value="USD"></input>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td align="right">NFT URL</td>
-                            <td><input type="text" id="operationalTokenUrlField"
-                              value = "ipfs://bafybeigdyrzt5sfp7udm7hu76uh7y26nf4dfuylqabf3oclgtqy55fbzdi" size="80"/>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td align="right">Flags</td>
-                            <td><input type="text" id="operationalFlagsField" value="1" size="10"/></td>
-                          </tr>
-                          <tr>
-                            <td align="right">NFT ID</td>
-                            <td><input type="text" id="operationalTokenIdField" value="" size="80"/></td>
-                          </tr>
-                          <tr>
-                            <td align="right">Transfer Fee</td>
-                            <td><input type="text" id="operationalTransferFeeField" value="" size="80"/></td>
-                          </tr>
-							          </table>
+                        </table>
                         <p align="right">
                           <textarea id="operationalResultField" cols="80" rows="20" ></textarea>
                         </p>
